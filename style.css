@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #4e4e4edd;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3%;
+}
+.titreHeader h2 {
+  border-bottom: 1px solid #4e4e4edd;
+  border-top: 1px solid #4e4e4edd;
+  white-space: nowrap;
+  font-size: 200%;
+}
+.titreHeader a:hover {
+  color: darkgrey; /* A voir avec Cedric */
+}
+.titreHeader a:active {
+  color: rgba(128, 151, 183, 0.774);
+}
+.navHeader {
+  display: flex;
+  align-items: center;
+  font-size: 130%;
+}
+.navHeader ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navHeader li {
+  white-space: nowrap;
+  ma
+}
+.navHeader a {
+  font-weight: 700;
+}
+.navHeader a:hover {
+  color: darkgrey;
+  border-bottom: 1px solid #4e4e4edd;
+}
+.navHeader a:active {
+  color: rgba(128, 151, 183, 0.774);
+}
+.mainBackgroundImg {
+  background-color: rgba(74, 74, 74, 0.779);
+  background-image: url(photoWebDev.jpg);
+  background-size: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  width: 20%;
+  height: 30%;
+  border-radius: 10px;
+  border-style: groove;
+  opacity: 0.8;
+}
+.mainCard h1 {
+  border-bottom: 1px solid #4e4e4edd;
+  padding-bottom: 1rem;
+}
+.mainCard p {
+  padding: 1rem 0;
+}
+.logohtml-js-css {
+  width: 50%;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(49, 49, 49);
+  color: aliceblue;
+}
