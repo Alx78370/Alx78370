@@ -13,11 +13,12 @@ body {
 header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding: 3%;
   border-bottom: 1px solid #4e4e4edd;
   position: sticky;
   top: 0;
-  background-color: rgba(244, 244, 244);
+  background: white;
 }
 .titreHeader h2 {
   border-bottom: 1px solid #4e4e4edd;
@@ -26,7 +27,7 @@ header {
   font-size: 200%;
 }
 .titreHeader a:hover {
-  color: darkgrey; /* font-size hover, A voir avec Cedric */
+  color: darkgrey;
 }
 .titreHeader a:active {
   color: rgba(128, 151, 183, 0.774);
@@ -35,20 +36,17 @@ header {
   display: flex;
   align-items: center;
   font-size: 130%;
-  margin-left: 22%; /* responsive nav, Avoir avec Cedric */
+  margin-left: 20%; /* responsive nav, Avoir avec Cedric */
 }
 .navHeader ul {
   display: flex;
+  flex-direction: row-reverse;
 }
 
 .navHeader li {
   white-space: nowrap;
-  margin-left: 30%;
+  margin-left: 50%;
 }
-.navHeader li:not(:last-child) {
-  margin-right: 0;
-}
-
 .navHeader a {
   font-weight: 700;
 }
@@ -63,8 +61,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(49, 49, 49);
-  color: aliceblue;
+  background: rgb(150, 150, 150);
+  background: linear-gradient(
+    90deg,
+    rgba(150, 150, 150, 1) 0%,
+    rgba(245, 245, 245, 1) 50%,
+    rgba(150, 150, 150, 1) 100%
+  );
+  color: #4e4e4edd;
   height: 2rem;
   bottom: 0;
 }
@@ -108,21 +112,11 @@ footer {
 /* Page mes projets */
 
 .projectMain {
-  background: hsla(0, 0%, 18%, 1);
-  background: linear-gradient(
-    0deg,
-    hsla(0, 0%, 18%, 1) 0%,
-    hsla(0, 0%, 50%, 1) 100%
-  );
-  background: -moz-linear-gradient(
-    0deg,
-    hsla(0, 0%, 18%, 1) 0%,
-    hsla(0, 0%, 50%, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    0deg,
-    hsla(0, 0%, 18%, 1) 0%,
-    hsla(0, 0%, 50%, 1) 100%
+  background: rgb(167, 167, 167);
+  background: radial-gradient(
+    circle,
+    rgba(167, 167, 167, 1) 0%,
+    rgba(0, 0, 0, 1) 87%
   );
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2f2f2f", endColorstr="#808080", GradientType=1 );
   height: 100%;
@@ -215,23 +209,12 @@ footer {
 /* page mes études */
 
 .etudeMain {
-  background: hsla(0, 0%, 18%, 1);
-  background: linear-gradient(
-    0deg,
-    hsla(0, 0%, 18%, 1) 0%,
-    hsla(0, 0%, 50%, 1) 100%
+  background: rgb(167, 167, 167);
+  background: radial-gradient(
+    circle,
+    rgba(167, 167, 167, 1) 0%,
+    rgba(0, 0, 0, 1) 87%
   );
-  background: -moz-linear-gradient(
-    0deg,
-    hsla(0, 0%, 18%, 1) 0%,
-    hsla(0, 0%, 50%, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    0deg,
-    hsla(0, 0%, 18%, 1) 0%,
-    hsla(0, 0%, 50%, 1) 100%
-  );
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2f2f2f", endColorstr="#808080", GradientType=1 );
   height: 100%;
 }
 .etudeTitle {
