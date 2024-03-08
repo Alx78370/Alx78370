@@ -7,6 +7,12 @@
   color: #4e4e4edd;
 }
 body {
+  background: rgb(167, 167, 167);
+  background: radial-gradient(
+    circle,
+    rgba(167, 167, 167, 1) 0%,
+    rgba(0, 0, 0, 1) 87%
+  );
 }
 header {
   display: flex;
@@ -17,6 +23,13 @@ header {
   position: sticky;
   top: 0;
   background: white;
+}
+[id]::before {
+  content: "";
+  display: block;
+  height: 9.5rem;
+  margin-top: -9.5rem;
+  visibility: hidden;
 }
 .titreHeader h2 {
   border-bottom: 1px solid #4e4e4edd;
@@ -55,6 +68,7 @@ header {
 .navHeader a:active {
   color: rgba(128, 151, 183, 0.774);
 }
+
 footer {
   display: flex;
   justify-content: center;
@@ -74,15 +88,11 @@ footer {
 /* page d'accueil */
 
 .mainAccueil {
-  background: rgb(167, 167, 167);
-  background: radial-gradient(
-    circle,
-    rgba(167, 167, 167, 1) 0%,
-    rgba(0, 0, 0, 1) 87%
-  );
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 .cardAccueil {
   display: flex;
@@ -90,40 +100,26 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: rgb(255, 255, 255);
-  width: 20%;
-  height: 30%;
-  border-radius: 10px;
+  padding: 10%;
+  border-radius: 50%;
   border-style: groove;
   opacity: 0.8;
+  font-size: 120%;
 }
-.mainCard h1 {
+.cardAccueil h1 {
   border-bottom: 1px solid #4e4e4edd;
-  padding-bottom: 1rem;
-}
-.mainCard p {
-  padding: 1rem 0;
-}
-.logohtml-js-css {
-  width: 50%;
-  margin-top: 10%;
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
 }
 
 /* Page mes projets */
 
 .projectMain {
-  background: rgb(167, 167, 167);
-  background: radial-gradient(
-    circle,
-    rgba(167, 167, 167, 1) 0%,
-    rgba(0, 0, 0, 1) 87%
-  );
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2f2f2f", endColorstr="#808080", GradientType=1 );
-  height: 100%;
 }
 .projectTitle {
   display: flex;
   justify-content: center;
-  padding: 3% 0;
+  padding-bottom: 5%;
 }
 .projectTitle h1 {
   color: rgba(244, 244, 244, 0.926);
@@ -132,7 +128,6 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-bottom: 5%;
 }
 .project1container {
   display: flex;
@@ -205,18 +200,11 @@ footer {
 /* page mes études */
 
 .etudeMain {
-  background: rgb(167, 167, 167);
-  background: radial-gradient(
-    circle,
-    rgba(167, 167, 167, 1) 0%,
-    rgba(0, 0, 0, 1) 87%
-  );
-  padding-bottom: 5%;
 }
 .etudeTitle {
   display: flex;
   justify-content: center;
-  padding: 3% 0;
+  padding: 5% 0;
 }
 .etudecontainer {
   display: flex;
@@ -251,6 +239,8 @@ footer {
   border-radius: 20px;
 }
 .etudeList {
+  display: flex;
+  align-items: center;
   background-color: rgba(244, 244, 244, 0.823);
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.926);
@@ -298,18 +288,11 @@ footer {
 /* page contact */
 
 .maincontact {
-  background: rgb(167, 167, 167);
-  background: radial-gradient(
-    circle,
-    rgba(167, 167, 167, 1) 0%,
-    rgba(0, 0, 0, 1) 87%
-  );
-  padding-bottom: 2%;
 }
 .contactTitle {
   display: flex;
   justify-content: center;
-  padding: 3% 0;
+  padding: 5% 0;
 }
 .contactTitle h1 {
   color: rgba(244, 244, 244, 0.926);
@@ -318,16 +301,18 @@ footer {
   display: flex;
   flex-direction: row;
   padding-bottom: 5%;
-  justify-content: space-around;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content: space-between;
 }
 .formcontainer {
   display: flex;
   flex-direction: column;
   align-items: start;
   background-color: rgba(244, 244, 244, 0.823);
-  width: 40%;
-  padding: 2%;
-  border-radius: 20px;
+  width: 65%;
+  padding: 1%;
+  border-radius: 10px;
   box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.926);
 }
 .formcontainer form {
@@ -337,14 +322,16 @@ footer {
   margin-bottom: 5%;
 }
 .forminput {
-  width: 50%;
+  width: 30%;
   height: 40px;
   font-size: 110%;
+  border-radius: 10px;
 }
 .formtextarea {
-  width: 100%;
+  width: 90%;
   height: 150px;
   font-size: 110%;
+  border-radius: 10px;
 }
 .buttonform {
   width: 30%;
