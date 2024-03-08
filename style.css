@@ -36,7 +36,7 @@ header {
   display: flex;
   align-items: center;
   font-size: 130%;
-  margin-left: 20%; /* responsive nav, Avoir avec Cedric */
+  margin-left: 20%;
 }
 .navHeader ul {
   display: flex;
@@ -69,7 +69,7 @@ footer {
     rgba(150, 150, 150, 1) 100%
   );
   color: #4e4e4edd;
-  height: 2rem;
+
   bottom: 0;
 }
 
@@ -143,7 +143,6 @@ footer {
   background-color: rgba(244, 244, 244, 0.823);
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.926);
-  height: 500px;
   margin: 0 5%;
 }
 .project2container {
@@ -154,7 +153,6 @@ footer {
   background-color: rgba(244, 244, 244, 0.823);
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.926);
-  height: 500px;
 }
 .project3container {
   display: flex;
@@ -165,7 +163,6 @@ footer {
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.926);
   margin: 0 5%;
-  height: 500px;
 }
 .projectMain img {
   width: 100%;
@@ -215,7 +212,7 @@ footer {
     rgba(167, 167, 167, 1) 0%,
     rgba(0, 0, 0, 1) 87%
   );
-  height: 100%;
+  padding-bottom: 5%;
 }
 .etudeTitle {
   display: flex;
@@ -225,7 +222,8 @@ footer {
 .etudecontainer {
   display: flex;
   align-items: flex-start;
-  margin: 2% 5% 5%;
+  margin-left: 5%;
+  margin-right: 5%;
   align-items: center;
 }
 .etudeTitle h1 {
@@ -244,19 +242,14 @@ footer {
   font-size: 110%;
 }
 .etudeCard h3 {
-  margin-bottom: 10%;
-}
-.etudeCard ul {
-  margin-bottom: 2%;
-}
-.etudeCard li {
   margin-bottom: 5%;
-  list-style: circle;
+}
+.etudeCard p {
+  margin-bottom: 5%;
 }
 .etudeCard img {
   width: 100%;
   object-fit: cover;
-  height: 450px;
   border-radius: 20px;
 }
 .etudeList {
@@ -302,4 +295,96 @@ footer {
 }
 .etudeList p {
   font-size: 120%;
+}
+
+/* page contact */
+
+.maincontact {
+  background: rgb(167, 167, 167);
+  background: radial-gradient(
+    circle,
+    rgba(167, 167, 167, 1) 0%,
+    rgba(0, 0, 0, 1) 87%
+  );
+  padding-bottom: 2%;
+}
+.contactTitle {
+  display: flex;
+  justify-content: center;
+  padding: 3% 0;
+}
+.contactTitle h1 {
+  color: rgba(244, 244, 244, 0.926);
+}
+.contactcontainer {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5%;
+  justify-content: space-around;
+}
+.formcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: rgba(244, 244, 244, 0.823);
+  width: 40%;
+  padding: 2%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.926);
+}
+.formcontainer form {
+  width: 100%;
+}
+.formcontainer li {
+  margin-bottom: 5%;
+}
+.forminput {
+  width: 50%;
+  height: 40px;
+  font-size: 110%;
+}
+.formtextarea {
+  width: 100%;
+  height: 150px;
+  font-size: 110%;
+}
+.buttonform {
+  width: 30%;
+  height: 40px;
+  font-size: 110%;
+  color: rgba(244, 244, 244, 0.926);
+  border-radius: 10px;
+  border-color: white;
+  background-color: #4e4e4edd;
+}
+.buttonform:hover {
+  filter: invert(1);
+}
+.buttonform:active {
+  transform: scale(1.1);
+}
+.contactlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+}
+.contactlist ul li {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(244, 244, 244, 0.8);
+  padding: 10%;
+  margin-bottom: 10%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.9);
+}
+.email {
+  white-space: nowrap;
+}
+.logo {
+  font-size: 2rem;
+}
+.logo:hover {
+  filter: invert(50%);
+  transform: scale(1.1);
 }
