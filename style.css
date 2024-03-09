@@ -1,5 +1,5 @@
 @font-face {
-	font-family: boohong;
+  font-family: boohong;
   src: url(/fonts/Boohong.otf), url(/fonts/Boohong.ttf);
 }
 * {
@@ -31,15 +31,15 @@ header {
 [id]::before {
   content: "";
   display: block;
-  height: 9.5rem;
-  margin-top: -9.5rem;
+  height: 10rem;
+  margin-top: -10rem;
   visibility: hidden;
 }
 .titreHeader h2 {
   border-bottom: 1px solid #4e4e4edd;
   border-top: 1px solid #4e4e4edd;
   white-space: nowrap;
-  font-size: 200%;
+  font-size: 3rem;
 }
 .titreHeader a:hover {
   color: darkgrey;
@@ -50,7 +50,7 @@ header {
 .navHeader {
   display: flex;
   align-items: center;
-  font-size: 130%;
+  font-size: 1.5rem;
   margin-left: 20%;
 }
 .navHeader ul {
@@ -93,27 +93,28 @@ footer {
 
 .mainAccueil {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-.cardAccueil {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(255, 255, 255);
-  padding: 10%;
-  border-radius: 50%;
+  margin: 5%;
   border-style: groove;
-  opacity: 0.8;
-  font-size: 120%;
+  padding: 10%;
 }
-.cardAccueil h1 {
-  border-bottom: 1px solid #4e4e4edd;
-  margin-bottom: 5rem;
-  padding-bottom: 5rem;
+.accueilTitre {
+  border-bottom: 1px solid rgba(244, 244, 244, 0.9);
+  margin-bottom: 10%;
+  padding-bottom: 10%;
+}
+.accueilTitre h1 {
+  font-size: 10rem;
+  color: rgba(244, 244, 244, 0.9);
+}
+.accueilSoustitre {
+  display: flex;
+  justify-content: flex-end;
+}
+.accueilSoustitre p {
+  color: rgba(244, 244, 244, 0.9);
+  font-size: 2.5rem;
+  justify-content: flex-end;
 }
 
 /* Page mes projets */
@@ -124,6 +125,7 @@ footer {
   display: flex;
   justify-content: center;
   padding-bottom: 5%;
+  font-size: 1.5rem;
 }
 .projectTitle h1 {
   color: rgba(244, 244, 244, 0.926);
@@ -209,10 +211,12 @@ footer {
   display: flex;
   justify-content: center;
   padding: 5% 0;
+  font-size: 1.5rem;
 }
 .etudecontainer {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -249,7 +253,9 @@ footer {
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.926);
   padding: 2%;
-  width: 70%;
+  width: 50%;
+  height: 100%;
+  font-size: 1.3rem;
 }
 .etudeList li {
   margin-bottom: 6%;
@@ -297,6 +303,7 @@ footer {
   display: flex;
   justify-content: center;
   padding: 5% 0;
+  font-size: 1.5rem;
 }
 .contactTitle h1 {
   color: rgba(244, 244, 244, 0.926);
@@ -353,25 +360,31 @@ footer {
   transform: scale(1.1);
 }
 .contactlist {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 30%;
 }
-.contactlist ul li {
+.contactlist ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.contactlist li {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(244, 244, 244, 0.8);
+  font-size: 1.3rem;
   padding: 10%;
-  margin-bottom: 10%;
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.9);
+}
+.contactlist li:last-child {
+  justify-content: space-evenly;
 }
 .email {
   white-space: nowrap;
 }
-.logosocial {
+.logo {
   font-size: 2rem;
 }
 .contactlist a:hover {
