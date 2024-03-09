@@ -12,24 +12,151 @@
 <body>
     <header>
         <div class="titreHeader">
-            <h2><a href="/page-accueil.html">MON PORTFOLIO</a></h2>
+            <h2><a href="#">MY PORTFOLIO</a></h2>
         </div>
         <nav class="navHeader">
             <ul>
-                <li><a href="/page-contact.html">Contact</a></li>
-                <li><a href="/page-mes-etudes.html">Mes études</a></li>
-                <li><a href="/page-mes-projets.html">Mes projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
             </ul>
         </nav>
     </header>
     <main class="mainAccueil">
-        <div class="cardAccueil">
-            <h1>ALEXIS VACHET</h1>
-            <P>"Web-developper à devenir."</P>
-            <img class="logohtml-js-css" src="/images/html-js-css-logo.png" alt="logohtml-js-css">
+        <div class="accueilTitre">
+            <h1>ALEXIS <br> VACHET</h1>
+        </div>
+        <div class="accueilSoustitre">
+            <p>"Web-developper to become."</p>
         </div>
     </main>
-    <footer>monportfolio.com</footer>
+    <main id="work" class="projectMain">
+        <section class="projectTitle">
+            <h1>WORK</h1>
+        </section>
+        <section class="projectcontainer">
+            <article class="project1container">
+                <img src="/images/imgProjet1.jpg" alt="imgProjet1">
+                <div>
+                    <h4>Projet 1</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam provident vel accusantium ipsa
+                        nihil.
+                        Veniam dolor laboriosam deleniti fugiat earum.</p>
+                </div>
+                <div class="linkcontainer">
+                    <a href="https://github.com/Alx78370" title="Lien vers mon projet/Github">En savoir plus</a>
+                </div>
+            </article>
+            <article class="project2container">
+                <img src="images/imgProjet2.png" alt="imgProjet2">
+                <div>
+                    <h4>Projet 2</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam provident vel accusantium ipsa
+                        nihil.
+                        Veniam dolor laboriosam deleniti fugiat earum.</p>
+                </div>
+                <div class="linkcontainer">
+                    <a href="https://github.com/Alx78370" title="Lien vers mon projet/Github">En savoir plus</a>
+                </div>
+            </article>
+            <article class="project3container">
+                <img src="images/imgProjet3.png" alt="imgProjet3">
+                <div>
+                    <h4>Projet 3</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam provident vel accusantium ipsa
+                        nihil.
+                        Veniam dolor laboriosam deleniti fugiat earum.</p>
+                </div>
+                <div class="linkcontainer">
+                    <a href="https://github.com/Alx78370" title="Lien vers mon projet/Github">En savoir plus</a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <main id="about" class="etudeMain">
+        <section class="etudeTitle">
+            <h1>ABOUT</h1>
+        </section>
+        <section class="etudecontainer">
+            <article class="etudeCard">
+                <img src="/images/photoProfil.jpg" alt="photoProfil">
+            </article>
+            <article class="etudeList">
+                <ul>
+                    <li>
+                        <span class="etudedate">2024 - 2025</span>
+                        <p>Titre professionnel développeur web et mobile -
+                            DONKEY SCHOOL - 75020
+                            Paris</p>
+                    </li>
+                    <li>
+                        <span class="etudedate">2016 - 2017</span>
+                        <p>Bachelor spécialité marketing en alternance -
+                            INSEEC - 75016 Paris</p>
+                    </li>
+                    <li>
+                        <span class="etudedate">2014 - 2016</span>
+                        <p>BTS Commerce International (marketing, management,
+                            logistique) - Lycée Jean Pierre Vernant -
+                            92310 Sèvres</p>
+                    </li>
+                    <li>
+                        <span class="etudedate">2012 - 2013</span>
+                        <p>Baccalauréat STG, spécialité Gestion des Systèmes
+                            d'Information - mention assez bien - Lycée
+                            Jean
+                            Vilar - 78370 Plaisir</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <main id="contact" class="maincontact">
+        <section class="contactTitle">
+            <h1>CONTACT</h1>
+        </section>
+        <section class="contactcontainer">
+            <article class="formcontainer">
+                <form action="/ma-page-de-traitement" method="post">
+                    <ul>
+                        <li>
+                            <input class="forminput" type="text" id="name" name="user_name" placeholder="Nom" />
+                        </li>
+                        <li>
+                            <input class="forminput" type="email" id="mail" name="user_name" placeholder="Email">
+                        </li>
+                        <li>
+                            <textarea class="formtextarea" id="Msg" name="user_message"
+                                placeholder="Message"></textarea>
+                        </li>
+                    </ul>
+                    <button class="buttonform" type="submit">Envoyer</button>
+                </form>
+            </article>
+            <article class="contactlist">
+                <ul>
+                    <li>
+                        <a href="mailto:alexis.vachet@outlook.fr" title="envoyer email" class="email"><i
+                                class="fa-solid fa-envelope"></i> alexis.vachet@outlook.fr</a>
+                    </li>
+                    <li>
+                        <a href="tel:0629850512" title="Appeler numéro"><i class="fa-solid fa-phone"></i>
+                            06.29.85.05.12</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/alexis.vachet.9" title="Lien vers mon profil Facebook"
+                            target="_blank"><i class="fa-brands fa-facebook logo"></i></a>
+                        <a href="https://github.com/Alx78370" title="Lien vers mon profil Github" target="_blank"> <i
+                                class="fa-brands fa-github logo"></i></a>
+                        <a href="https://www.linkedin.com/in/alexis-vachet-9b5048b0/"
+                            title="Lien vers mon profil Linkedin" target="_blank"><i
+                                class="fa-brands fa-linkedin logo"></i></a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer>© Copyright 2024 by Alexis Vachet</footer>
 </body>
 
 </html>
