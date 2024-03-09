@@ -1,6 +1,6 @@
 @font-face {
 	font-family: boohong;
-  src: url(/fonts/Boohong.otf), src:url(/fonts/Boohong.ttf);
+  src: url(/fonts/Boohong.otf), url(/fonts/Boohong.ttf);
 }
 * {
   margin: 0;
@@ -356,11 +356,12 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 20%;
+  width: 30%;
 }
 .contactlist ul li {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(244, 244, 244, 0.8);
   padding: 10%;
   margin-bottom: 10%;
@@ -370,10 +371,10 @@ footer {
 .email {
   white-space: nowrap;
 }
-.logo {
+.logosocial {
   font-size: 2rem;
 }
-.logo:hover {
+.contactlist a:hover {
   filter: invert(50%);
   transform: scale(1.1);
 }
