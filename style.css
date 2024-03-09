@@ -1,9 +1,13 @@
+@font-face {
+	font-family: boohong;
+  src: url(/fonts/Boohong.otf), src:url(/fonts/Boohong.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: boohong, sans-serif;
   color: #4e4e4edd;
 }
 body {
