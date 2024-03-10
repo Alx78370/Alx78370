@@ -51,18 +51,13 @@ header {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
-  margin-left: 20%;
 }
-.navHeader ul {
+.navHeader div {
   display: flex;
   flex-direction: row-reverse;
 }
-
-.navHeader li {
-  white-space: nowrap;
-  margin-left: 50%;
-}
 .navHeader a {
+  margin-left: 50%;
   font-weight: 700;
 }
 .navHeader a:hover {
@@ -72,7 +67,13 @@ header {
 .navHeader a:active {
   color: rgba(128, 151, 183, 0.774);
 }
-
+label {
+  display: none;
+}
+label,
+#toggle {
+  display: none;
+}
 footer {
   display: flex;
   justify-content: center;
@@ -85,7 +86,6 @@ footer {
     rgba(150, 150, 150, 1) 100%
   );
   color: #4e4e4edd;
-
   bottom: 0;
 }
 
@@ -334,5 +334,83 @@ footer {
 }
 
 /* media query */
+@media screen and (max-width: 1024px) {
+  .navHeader a {
+    font-size: 1rem;
+  }
+  .titreHeader h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titreHeader {
+    padding-bottom: 2%;
+  }
+  .navHeader {
+    width: 100vw;
+    justify-content: center;
+  }
+  .navList {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .navHeader a {
+    margin-left: 0;
+  }
+  .accueilTitre h1 {
+    font-size: 4rem;
+  }
+  .accueilSoustitre p {
+    font-size: 1.5rem;
+  }
+  .titreHeader h2 {
+    font-size: 1.5rem;
+  }
+}
 
-@media screen and (max-width: 320px);
+@media screen and (max-width: 320px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .titreHeader {
+    padding-bottom: 0;
+  }
+  .navHeader {
+    width: 0;
+  }
+  .navHeader div {
+    display: none;
+  }
+  nav {
+    height: 60px;
+  }
+  nav .navList {
+    display: none;
+    flex-direction: column;
+    background: #48435c;
+    height: 220px;
+  }
+  label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    color: #4e4e4edd;
+    cursor: pointer;
+  }
+  nav .navList a {
+    width: 50%;
+  }
+  #toggle:checked + .main_pages {
+    display: flex;
+  }
+}
