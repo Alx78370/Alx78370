@@ -18,16 +18,6 @@ body {
     rgba(0, 0, 0, 1) 87%
   );
 }
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 3%;
-  border-bottom: 1px solid #4e4e4edd;
-  position: sticky;
-  top: 0;
-  background: white;
-}
 [id]::before {
   content: "";
   display: block;
@@ -35,27 +25,42 @@ header {
   margin-top: -10rem;
   visibility: hidden;
 }
-.titreHeader h2 {
-  border-bottom: 1px solid #4e4e4edd;
-  border-top: 1px solid #4e4e4edd;
-  white-space: nowrap;
-  font-size: 3rem;
+header {
+  padding: 3%;
+  position: sticky;
+  top: 0;
+  background: white;
 }
-.titreHeader a:hover {
-  color: darkgrey;
-}
-.titreHeader a:active {
-  color: rgba(128, 151, 183, 0.774);
-}
-.navHeader {
+nav {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   font-size: 1.5rem;
 }
-.navHeader div {
+nav ul {
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 60%;
 }
+nav h2 {
+  border-bottom: 1px solid #4e4e4edd;
+  border-top: 1px solid #4e4e4edd;
+  font-size: 2rem;
+  margin-right: 20%;
+  white-space: nowrap;
+}
+#icons {
+  cursor: pointer;
+  display: none;
+}
+nav a:hover {
+  color: darkgrey;
+}
+nav a:active {
+  color: rgba(128, 151, 183, 0.774);
+}
+
+
 .navHeader a {
   margin-left: 50%;
   font-weight: 700;
@@ -427,46 +432,22 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
+  #icons {
+    display: block;
+  }
+  #icons:before {
+    
+  }
   .titreHeader {
     padding-bottom: 0;
   }
   .navHeader {
     flex-direction: column;
   }
-  .navHeader div {
-    display: none;
-  }
-  nav {
-    top: 0;
-    position: absolute;
-    z-index: 3;
-    height: 100vh;
-    width: 100%;
-    
-  }
-  nav .navList {
-    display: none;
-    flex-direction: column;
-    background: #48435c;
-    height: 100%;
-  }
-  
-
   nav .navList a {
   width: 100%;
   }
-  label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    font-size: 1.5rem;
-    color: #4e4e4edd;
-    cursor: pointer;
-  }
-  #toggle:checked + .navList {
-    display: flex;
-  }
+  
   .etudeList p {
     font-size: 1rem;
   }
