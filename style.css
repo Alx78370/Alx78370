@@ -70,8 +70,7 @@ header {
 label {
   display: none;
 }
-label,
-#toggle {
+label, #toggle {
   display: none;
 }
 footer {
@@ -190,7 +189,7 @@ footer {
   flex-direction: column;
   align-items: center;
   background-color: rgba(244, 244, 244, 0.823);
-  width: 30%;
+  width: 40%;
   padding: 1%;
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.926);
@@ -209,7 +208,7 @@ footer {
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.926);
   padding: 2%;
-  width: 60%;
+  width: 50%;
   height: 100%;
   font-size: 1.3rem;
 }
@@ -314,7 +313,7 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: rgba(244, 244, 244, 0.8);
-  font-size: 1.3rem;
+  font-size: 1rem;
   padding: 10%;
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.9);
@@ -341,6 +340,32 @@ footer {
   .titreHeader h2 {
     font-size: 2rem;
   }
+  .accueilTitre h1 {
+    font-size: 6rem;
+  }
+  .etudecontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .etudeCard {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .etudeList {
+    width: 100%;
+  }
+  .formcontainer {
+    width: 45%;
+  }
+  .forminput {
+    width: 60%;
+  }
+  .formtextarea {
+    width: 95%;
+  }
+  .contactlist {
+    width: 45%;
+  }
 }
 @media screen and (max-width: 768px) {
   header {
@@ -363,13 +388,35 @@ footer {
     margin-left: 0;
   }
   .accueilTitre h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .accueilSoustitre p {
     font-size: 1.5rem;
   }
   .titreHeader h2 {
     font-size: 1.5rem;
+  }
+  .etudeList p {
+    font-size: 1rem;
+  }
+  .contactcontainer {
+    flex-direction: column;
+  }
+  .formcontainer {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .contactlist {
+    width: 100%;
+  }
+  .contactlist li:nth-child(2) {
+    margin: 5% 0;
+  }
+  .buttonform {
+    width: 40%;
+  }
+  footer {
+    font-size: 80%;
   }
 }
 
@@ -384,19 +431,29 @@ footer {
     padding-bottom: 0;
   }
   .navHeader {
-    width: 0;
+    flex-direction: column;
   }
   .navHeader div {
     display: none;
   }
   nav {
-    height: 60px;
+    top: 0;
+    position: absolute;
+    z-index: 3;
+    height: 100vh;
+    width: 100%;
+    
   }
   nav .navList {
     display: none;
     flex-direction: column;
     background: #48435c;
-    height: 220px;
+    height: 100%;
+  }
+  
+
+  nav .navList a {
+  width: 100%;
   }
   label {
     display: flex;
@@ -407,10 +464,16 @@ footer {
     color: #4e4e4edd;
     cursor: pointer;
   }
-  nav .navList a {
-    width: 50%;
-  }
-  #toggle:checked + .main_pages {
+  #toggle:checked + .navList {
     display: flex;
+  }
+  .etudeList p {
+    font-size: 1rem;
+  }
+  .forminput {
+    width: 95%;
+  }
+  footer {
+    font-size: 60%;
   }
 }
