@@ -18,16 +18,6 @@ body {
     rgba(0, 0, 0, 1) 87%
   );
 }
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 3%;
-  border-bottom: 1px solid #4e4e4edd;
-  position: sticky;
-  top: 0;
-  background: white;
-}
 [id]::before {
   content: "";
   display: block;
@@ -35,44 +25,48 @@ header {
   margin-top: -10rem;
   visibility: hidden;
 }
-.titreHeader h2 {
+header {
+  padding: 3%;
+  position: sticky;
+  top: 0;
+  background: white;
+}
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  font-size: calc(0.7rem + 1vw);
+}
+nav h2 {
   border-bottom: 1px solid #4e4e4edd;
   border-top: 1px solid #4e4e4edd;
+  font-size: calc(1.5rem + 2vw);
+  margin-right: 20%;
   white-space: nowrap;
-  font-size: 3rem;
 }
-.titreHeader a:hover {
+#icons {
+  cursor: pointer;
+  display: none;
+}
+nav a:hover {
   color: darkgrey;
 }
-.titreHeader a:active {
+nav a:active {
   color: rgba(128, 151, 183, 0.774);
 }
-.navHeader {
-  display: flex;
-  align-items: center;
-  font-size: 1.5rem;
-}
-.navHeader div {
-  display: flex;
-  flex-direction: row-reverse;
-}
-.navHeader a {
-  margin-left: 50%;
-  font-weight: 700;
-}
-.navHeader a:hover {
+nav a:hover {
   color: darkgrey;
   border-bottom: 1px solid #4e4e4edd;
 }
-.navHeader a:active {
+nav a:active {
   color: rgba(128, 151, 183, 0.774);
 }
-label {
-  display: none;
-}
-label, #toggle {
-  display: none;
-}
+
 footer {
   display: flex;
   justify-content: center;
@@ -334,12 +328,6 @@ footer {
 
 /* media query */
 @media screen and (max-width: 1024px) {
-  .navHeader a {
-    font-size: 1rem;
-  }
-  .titreHeader h2 {
-    font-size: 2rem;
-  }
   .accueilTitre h1 {
     font-size: 6rem;
   }
@@ -368,23 +356,16 @@ footer {
   }
 }
 @media screen and (max-width: 768px) {
-  header {
+  nav {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .titreHeader {
-    padding-bottom: 2%;
+  Header h2 {
+    margin-bottom: 3%;
+    margin-right: 0;
   }
-  .navHeader {
-    width: 100vw;
-    justify-content: center;
-  }
-  .navList {
-    width: 100%;
-    justify-content: space-around;
-  }
-  .navHeader a {
+  nav a {
     margin-left: 0;
   }
   .accueilTitre h1 {
@@ -421,11 +402,48 @@ footer {
 }
 
 @media screen and (max-width: 320px) {
-  header {
+  nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+  }
+  Header h2 {
+    margin-bottom: 0;
+  }
+  #icons {
+    display: block;
+  }
+  #icons:before {
+    content: "☰";
+  }
+  .active #icons:before {
+    content: "✖";
+  }
+  nav ul {
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    left: -100%;
+    top: 5%;
+    flex-direction: column;
+    background-color: #4e4e4ef3;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.25s;
+  }
+
+  nav li a {
+    color: rgba(244, 244, 244, 0.8);
+    font-size: 2rem;
+  }
+  nav li a:hover {
+    color: rgba(203, 203, 203, 0.8);
+  }
+  nav.active ul {
+    left: 0;
   }
   .titreHeader {
     padding-bottom: 0;
@@ -433,39 +451,11 @@ footer {
   .navHeader {
     flex-direction: column;
   }
-  .navHeader div {
-    display: none;
-  }
-  nav {
-    top: 0;
-    position: absolute;
-    z-index: 3;
-    height: 100vh;
-    width: 100%;
-    
-  }
-  nav .navList {
-    display: none;
-    flex-direction: column;
-    background: #48435c;
-    height: 100%;
-  }
-  
-
   nav .navList a {
-  width: 100%;
+    width: 100%;
   }
-  label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    font-size: 1.5rem;
-    color: #4e4e4edd;
-    cursor: pointer;
-  }
-  #toggle:checked + .navList {
-    display: flex;
+  nav h2 {
+    font-size: 1.2rem;
   }
   .etudeList p {
     font-size: 1rem;

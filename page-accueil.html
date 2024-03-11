@@ -11,19 +11,14 @@
 
 <body>
     <header>
-        <div class="titreHeader">
+        <nav id="nav">
             <h2><a href="#">MY PORTFOLIO</a></h2>
-        </div>
-        
-        <nav id="nav" class="navHeader">
-            <label for="toggle">☰</label>
-            <label for="toggle">x</label>
-            <input type="checkbox" id="toggle">
-            <div class="navList">
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
-                <a href="#work">Work</a>
-            </div>
+            <ul>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div id="icons">☰</div>
         </nav>
     </header>
     <main>
@@ -104,7 +99,8 @@
                     <ul>
                         <li>
                             <h3>About me.</h3>
-                            <p>Hello there, my name is Alexis Vachet. I'm 28 years old and I've decided to take a leap of
+                            <p>Hello there, my name is Alexis Vachet. I'm 28 years old and I've decided to take a leap
+                                of
                                 faith
                                 and become what I've always wanted to be : a developer. From what I can remember, I've
                                 always
@@ -169,8 +165,8 @@
                         <li>
                             <a href="https://www.facebook.com/alexis.vachet.9" title="Lien vers mon profil Facebook"
                                 target="_blank"><i class="fa-brands fa-facebook logo"></i></a>
-                            <a href="https://github.com/Alx78370" title="Lien vers mon profil Github" target="_blank"> <i
-                                    class="fa-brands fa-github logo"></i></a>
+                            <a href="https://github.com/Alx78370" title="Lien vers mon profil Github" target="_blank">
+                                <i class="fa-brands fa-github logo"></i></a>
                             <a href="https://www.linkedin.com/in/alexis-vachet-9b5048b0/"
                                 title="Lien vers mon profil Linkedin" target="_blank"><i
                                     class="fa-brands fa-linkedin logo"></i></a>
@@ -181,6 +177,7 @@
         </section>
     </main>
     <footer>© Copyright 2024 by Alexis Vachet</footer>
+    <script src="./index.js"></script>
 </body>
 
 </html>
