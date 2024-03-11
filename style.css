@@ -51,18 +51,13 @@ header {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
-  margin-left: 20%;
 }
-.navHeader ul {
+.navHeader div {
   display: flex;
   flex-direction: row-reverse;
 }
-
-.navHeader li {
-  white-space: nowrap;
-  margin-left: 50%;
-}
 .navHeader a {
+  margin-left: 50%;
   font-weight: 700;
 }
 .navHeader a:hover {
@@ -72,7 +67,12 @@ header {
 .navHeader a:active {
   color: rgba(128, 151, 183, 0.774);
 }
-
+label {
+  display: none;
+}
+label, #toggle {
+  display: none;
+}
 footer {
   display: flex;
   justify-content: center;
@@ -85,7 +85,6 @@ footer {
     rgba(150, 150, 150, 1) 100%
   );
   color: #4e4e4edd;
-
   bottom: 0;
 }
 
@@ -190,7 +189,7 @@ footer {
   flex-direction: column;
   align-items: center;
   background-color: rgba(244, 244, 244, 0.823);
-  width: 30%;
+  width: 40%;
   padding: 1%;
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.926);
@@ -198,6 +197,7 @@ footer {
 
 .etudeCard img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 20px;
 }
@@ -208,7 +208,7 @@ footer {
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.926);
   padding: 2%;
-  width: 60%;
+  width: 50%;
   height: 100%;
   font-size: 1.3rem;
 }
@@ -218,6 +218,9 @@ footer {
   display: flex;
 }
 .etudeList h3 {
+  margin-bottom: 5%;
+}
+.etudeList p {
   margin-bottom: 5%;
 }
 .etudeList li:last-child {
@@ -310,7 +313,7 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: rgba(244, 244, 244, 0.8);
-  font-size: 1.3rem;
+  font-size: 1rem;
   padding: 10%;
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.9);
@@ -327,4 +330,150 @@ footer {
 .contactlist a:hover {
   filter: invert(50%);
   transform: scale(1.1);
+}
+
+/* media query */
+@media screen and (max-width: 1024px) {
+  .navHeader a {
+    font-size: 1rem;
+  }
+  .titreHeader h2 {
+    font-size: 2rem;
+  }
+  .accueilTitre h1 {
+    font-size: 6rem;
+  }
+  .etudecontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .etudeCard {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .etudeList {
+    width: 100%;
+  }
+  .formcontainer {
+    width: 45%;
+  }
+  .forminput {
+    width: 60%;
+  }
+  .formtextarea {
+    width: 95%;
+  }
+  .contactlist {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titreHeader {
+    padding-bottom: 2%;
+  }
+  .navHeader {
+    width: 100vw;
+    justify-content: center;
+  }
+  .navList {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .navHeader a {
+    margin-left: 0;
+  }
+  .accueilTitre h1 {
+    font-size: 3rem;
+  }
+  .accueilSoustitre p {
+    font-size: 1.5rem;
+  }
+  .titreHeader h2 {
+    font-size: 1.5rem;
+  }
+  .etudeList p {
+    font-size: 1rem;
+  }
+  .contactcontainer {
+    flex-direction: column;
+  }
+  .formcontainer {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .contactlist {
+    width: 100%;
+  }
+  .contactlist li:nth-child(2) {
+    margin: 5% 0;
+  }
+  .buttonform {
+    width: 40%;
+  }
+  footer {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .titreHeader {
+    padding-bottom: 0;
+  }
+  .navHeader {
+    flex-direction: column;
+  }
+  .navHeader div {
+    display: none;
+  }
+  nav {
+    top: 0;
+    position: absolute;
+    z-index: 3;
+    height: 100vh;
+    width: 100%;
+    
+  }
+  nav .navList {
+    display: none;
+    flex-direction: column;
+    background: #48435c;
+    height: 100%;
+  }
+  
+
+  nav .navList a {
+  width: 100%;
+  }
+  label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    color: #4e4e4edd;
+    cursor: pointer;
+  }
+  #toggle:checked + .navList {
+    display: flex;
+  }
+  .etudeList p {
+    font-size: 1rem;
+  }
+  .forminput {
+    width: 95%;
+  }
+  footer {
+    font-size: 60%;
+  }
 }
