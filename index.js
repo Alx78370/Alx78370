@@ -18,3 +18,10 @@ links.forEach((link) => {
     const burgeropen = document.getElementById('icons').innerHTML = "☰";
   });
 });
+
+function sendMail()
+{
+  const subjectLine = document.getElementById("name").value + " " + document.getElementById("surname").value;
+  const body = document.getElementById("Msg").value;
+  window.location.href ="mailto:alexis.vachet@outlook.fr?subject="+subjectLine+"&body="+body;
+}
