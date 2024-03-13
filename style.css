@@ -167,7 +167,7 @@ footer {
   color: #4e4e4edd;
 }
 
-/* page mes études */
+/* page about */
 
 .etudeTitle {
   display: flex;
@@ -277,12 +277,14 @@ footer {
   height: 40px;
   font-size: 110%;
   border-radius: 10px;
+  padding: 10px;
 }
 .formtextarea {
   width: 90%;
   height: 150px;
   font-size: 110%;
   border-radius: 10px;
+  padding: 10px;  
 }
 .buttonform {
   width: 30%;
@@ -332,9 +334,9 @@ footer {
   transform: scale(1.1);
 }
 
-/* media query */
+/* media querries */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
   .accueilTitre h1 {
     font-size: 6rem;
   }
@@ -354,7 +356,7 @@ footer {
     width: 45%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   nav {
     display: flex;
     flex-direction: column;
@@ -421,7 +423,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   nav {
     display: flex;
     flex-direction: row;
@@ -482,8 +484,14 @@ footer {
   .etudeList p {
     font-size: 1rem;
   }
+  .formcontainer{
+    align-items: center;
+  }
   .forminput {
-    width: 95%;
+    width: 100%;
+  }
+  .formtextarea {
+    width: 100%;
   }
   .contactlist li {
     font-size: 1rem;
