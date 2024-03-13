@@ -25,7 +25,9 @@ body {
   margin-top: -10rem;
   visibility: hidden;
 }
-#work, #about, #contact {
+#work,
+#about,
+#contact {
   scroll-margin-top: 100px;
 }
 header {
@@ -445,7 +447,14 @@ footer {
     align-items: center;
     width: 100%;
   }
-  #work, #about, #contact {
+  header {
+    display: flex;
+    height: 45px;
+    padding: 10px;
+  }
+  #work,
+  #about,
+  #contact {
     scroll-margin-top: 45px;
   }
   Header h2 {
@@ -459,7 +468,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     left: -100%;
-    top: 5%;
+    top: 65px;
     flex-direction: column;
     background-color: #4e4e4ef3;
     width: 100%;
