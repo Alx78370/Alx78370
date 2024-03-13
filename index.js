@@ -58,6 +58,7 @@ links.forEach((link) => {
   link.addEventListener("click", () => {
     nav.classList.remove("active");
     const burgeropen = (document.getElementById("icons").innerHTML = "☰");
+    enableScroll();
   });
 });
 
