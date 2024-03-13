@@ -524,6 +524,13 @@ footer {
   nav h2 {
     font-size: 1.2rem;
   }
+  .accueil {
+    height: 100vh;
+    justify-content: center;
+  }
+  .accueil img {
+    width: 100%;
+  }
   .etudeCard {
     width: 100%;
   }
