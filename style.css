@@ -87,6 +87,7 @@ footer {
 /* page d'accueil */
 
 .accueil {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-top: 5%;
@@ -110,6 +111,13 @@ footer {
   color: rgba(244, 244, 244, 0.9);
   font-size: 2.5rem;
   justify-content: flex-end;
+  margin-bottom: 30%;
+}
+.accueil img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
 }
 
 /* Page mes projets */
