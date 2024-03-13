@@ -410,6 +410,31 @@ footer {
   footer {
     font-size: 80%;
   }
+  .contactlist a:hover {
+    filter: none;
+    transform: scale(1);
+  }
+  .buttonform:hover {
+    filter: none;
+  }
+  .buttonform:active {
+    transform: scale(1);
+  }
+  .etudeList a:hover {
+    transform: scale(1);
+    filter: none;
+  }
+  .projectcontainer li a:hover {
+    transform: scale(1);
+    filter: none;
+  }
+  nav a:hover {
+    color: #4e4e4edd;
+    border-bottom: none;
+  }
+  nav a:active {
+    color: #4e4e4edd;
+  }
 }
 
 @media screen and (max-width: 426px) {
