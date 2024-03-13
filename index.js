@@ -8,12 +8,13 @@ icons.addEventListener("click", () => {
   const burgerclose = document.getElementById('icons').innerHTML = "✘";
   }
   else {
-    const burgeropen = document.getElementById('icons').innerHTML = "☰";
+    const burgeropen = document.getElementById('icons').innerHTML = "☰";           
   }
 });
 
 links.forEach((link) => {
   link.addEventListener("click", () => {
     nav.classList.remove("active");
+    const burgeropen = document.getElementById('icons').innerHTML = "☰";
   });
 });

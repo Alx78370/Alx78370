@@ -59,18 +59,14 @@ nav h2 {
 }
 nav a:hover {
   color: darkgrey;
-}
-nav a:active {
-  color: rgba(128, 151, 183, 0.774);
-}
-nav a:hover {
-  color: darkgrey;
   border-bottom: 1px solid #4e4e4edd;
 }
 nav a:active {
   color: rgba(128, 151, 183, 0.774);
 }
-
+main {
+  margin: 0 5%;
+}
 footer {
   display: flex;
   justify-content: center;
@@ -91,8 +87,7 @@ footer {
 .accueil {
   display: flex;
   flex-direction: column;
-  margin: 5%;
-  margin-bottom: 0;
+  margin-top: 5%;
   border-style: groove;
   padding: 10%;
 }
@@ -127,9 +122,6 @@ footer {
 .projectTitle h1 {
   color: rgba(244, 244, 244, 0.9);
 }
-.projectcontainer {
-  margin: 0 5%;
-}
 .projectcontainer ul {
   display: flex;
   flex-direction: row;
@@ -139,12 +131,10 @@ footer {
 .projectcontainer ul li {
   width: 30rem;
 }
-
 .projectcontainer li a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0.5%;
   background-color: rgba(244, 244, 244, 0.823);
   width: 100%;
   border-radius: 20px;
@@ -167,7 +157,7 @@ footer {
   color: #4e4e4edd;
 }
 
-/* page mes études */
+/* page about */
 
 .etudeTitle {
   display: flex;
@@ -178,8 +168,6 @@ footer {
 .etudecontainer {
   display: flex;
   justify-content: space-between;
-  margin-left: 5%;
-  margin-right: 5%;
 }
 .etudeTitle h1 {
   color: rgba(244, 244, 244, 0.926);
@@ -216,6 +204,7 @@ footer {
   flex-direction: column;
   padding-bottom: 3%;
   display: flex;
+  justify-content: center;
 }
 .etudeList h3 {
   margin-bottom: 5%;
@@ -250,26 +239,23 @@ footer {
 }
 .contactcontainer {
   display: flex;
-  flex-direction: row;
   padding-bottom: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
   justify-content: space-between;
 }
-.formcontainer {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
+.contactform {
   background-color: rgba(244, 244, 244, 0.823);
   width: 65%;
   padding: 1%;
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.926);
 }
-.formcontainer form {
+.contactform form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
   width: 100%;
 }
-.formcontainer li {
+.contactform li {
   margin-bottom: 5%;
 }
 .forminput {
@@ -277,12 +263,16 @@ footer {
   height: 40px;
   font-size: 110%;
   border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 .formtextarea {
-  width: 90%;
+  width: 95%;
   height: 150px;
   font-size: 110%;
   border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 .buttonform {
   width: 30%;
@@ -332,29 +322,30 @@ footer {
   transform: scale(1.1);
 }
 
-/* media query */
+/* media querries */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
   .accueilTitre h1 {
     font-size: 6rem;
   }
   .etudeList {
     font-size: 1rem;
   }
-  .formcontainer {
+  .contactform {
     width: 45%;
   }
   .forminput {
     width: 60%;
+    padding: 5px;
   }
   .formtextarea {
-    width: 95%;
+    padding: 5px;
   }
   .contactlist {
     width: 45%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   nav {
     display: flex;
     flex-direction: column;
@@ -394,7 +385,7 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  .formcontainer {
+  .contactform {
     width: 100%;
     margin-bottom: 5%;
   }
@@ -411,7 +402,7 @@ footer {
     width: 100%;
   }
   .contactlist li {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .logo {
     font-size: 3rem;
@@ -421,7 +412,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   nav {
     display: flex;
     flex-direction: row;
@@ -437,12 +428,6 @@ footer {
   }
   #icons {
     display: block;
-  }
-  #icons:before {
-    content: "p";
-  }
-  .active #icons:before {
-    content: "\2716";
   }
   nav ul {
     position: fixed;
@@ -479,8 +464,16 @@ footer {
   nav h2 {
     font-size: 1.2rem;
   }
+  .etudeCard {
+    width: 100%;
+  }
   .etudeList p {
     font-size: 1rem;
+  }
+  .contactform form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .forminput {
     width: 95%;
