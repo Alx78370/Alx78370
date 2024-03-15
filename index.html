@@ -32,6 +32,7 @@
             </div>
             <img src="/images/webdevgif.gif" alt="dev working gif">
         </section>
+
         <section class="projectMain">
             <div tabindex="0" id="work" class="projectTitle">
                 <h1>WORK</h1>
@@ -95,6 +96,7 @@
                 </ul>
             </article>
         </section>
+
         <section class="etudeMain">
             <div tabindex="0" id="about" class="etudeTitle">
                 <h1>ABOUT</h1>
@@ -131,6 +133,7 @@
                 </div>
             </article>
         </section>
+
         <section class="maincontact">
             <div tabindex="0" id="contact" class="contactTitle">
                 <h1>CONTACT</h1>
@@ -138,9 +141,12 @@
             <div class="contactcontainer">
                 <div class="contactform">
                     <form>
-                        <input class="forminput" type="text" id="surname" name="user_surname" placeholder="Surname" />
-                        <input class="forminput" type="text" id="name" name="user_name" placeholder="Name" />
-                        <textarea class="formtextarea" id="Msg" name="user_message" placeholder="Message"></textarea>
+                        <label for="surname">Surname</label>
+                        <input class="forminput" type="text" id="surname" name="user_surname" placeholder="Type your surname ..." />
+                        <label for="name">Name</label>
+                        <input class="forminput" type="text" id="name" name="user_name" placeholder="Type your name ..." />
+                        <label for="Msg">Message</label>
+                        <textarea class="formtextarea" id="Msg" name="user_message" placeholder="Type your message ..."></textarea>
                         <button onclick="sendMail()" class="buttonform">Send Email</button>
                     </form>
                 </div>

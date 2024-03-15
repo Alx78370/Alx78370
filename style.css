@@ -2,6 +2,10 @@
   font-family: boohong;
   src: url(/fonts/Boohong.otf), url(/fonts/Boohong.ttf);
 }
+@font-face {
+  font-family: eazyChat;
+  src: url(/fonts/Eazy\ Chat.otf), url(/fonts/Eazy\Chat.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -238,6 +242,8 @@ footer {
   margin-bottom: 5%;
 }
 .etudeList p {
+  font-family: eazyChat;
+  font-weight: 30;
   margin-bottom: 5%;
 }
 .etudeList li:last-child {
@@ -286,21 +292,26 @@ footer {
 .contactform li {
   margin-bottom: 5%;
 }
+form label {
+  margin-bottom: 1%;
+}
 .forminput {
-  width: 30%;
+  width: 97%;
   height: 40px;
   font-size: 110%;
   border-radius: 10px;
   margin-bottom: 10px;
   padding: 10px;
+  font-family: eazyChat;
 }
 .formtextarea {
-  width: 95%;
+  width: 97%;
   height: 150px;
   font-size: 110%;
   border-radius: 10px;
   margin-bottom: 10px;
   padding: 10px;
+  font-family: eazyChat;
 }
 .buttonform {
   width: 30%;
@@ -363,7 +374,6 @@ footer {
     width: 45%;
   }
   .forminput {
-    width: 60%;
     padding: 5px;
   }
   .formtextarea {
